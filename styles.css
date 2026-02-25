@@ -1,5 +1,5 @@
 /*
-    Name: 
+    Name: Jasmine Fricke
 */
 
 :root{
@@ -74,6 +74,8 @@ header{
     background-size: contain;
     /* Styles were added here to arrange the content, I used flexbox */
     /* TO DO */
+    display: flex;
+    flex-direction: column;
 }
 
 /* For All Headings */
@@ -137,6 +139,9 @@ nav ul{
     padding: 0;
     /* Styles were added here to arrange the content, I used flexbox */
     /* TO DO */
+    display: flex;
+    list-style-type: none;
+    padding: 0;
 }
 
 nav a{
@@ -165,6 +170,8 @@ nav a span{
     position: relative;
     /* Styles were added here to arrange the content, I used top and z-index for this */
     /* TO DO */
+    top: -135px;
+    z-index: 1;
 }
 
 nav a:focus{
@@ -224,17 +231,26 @@ p{
     padding: 96px 32px;
     /* Styles were added here to arrange the content, I used grid */
     /* TO DO */
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    gap: 16px;
 }
 
 #plants h3, #plants > p{
     /* Styles were added here to arrange the content, these are grid children styles */
     /* TO DO */
+    grid-column: 1/-1;
+    
 }
 
 #plants section{
     /* Styles were added here to arrange the content, I used flexbox */
     /* TO DO */
     margin: 32px auto 0;
+    align-items: start;
+    justify-content: space-between;
+    align-content: stretch;
 }
 
 #plants h4{
@@ -247,6 +263,7 @@ p{
     width: 100%;
     max-width: 400px;
     height: auto;
+    grid-row: 1/-1;
 }
 
 .price{
